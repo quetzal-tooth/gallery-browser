@@ -1,0 +1,53 @@
+<html class="theme-black" lang="en">
+	<head>
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/local/fa-free/css/all.css">
+		<link rel="stylesheet" type="text/css" href="/local/gallery_main.css">
+		<script src="/local/jquery-3.4.1.min.js"></script>
+		<script src="/local/lozad.min.js"></script>
+		<script src="/local/gallery_main.js"></script>
+		<script>const observer = lozad(); document.addEventListener("DOMContentLoaded", function(event) {observer.observe();});</script>
+	</head>
+	<body>
+		<nav role="navigation">
+			<a class="logo" href="/">
+				<img src="/local/book.png" alt="logo" width="46" height="30">
+			</a>
+			<form role="search" action="/proc/search/" class="search">
+				<input type="search" name="q" value="" autocapitalize="none" required="">
+				<button type="submit" class="btn btn-primary btn-square">
+					<i class="fa fa-search fa-lg"></i>
+				</button>
+			</form>
+			<button type="button" class="btn btn-secondary btn-square" id="hamburger">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+			</button>
+			<div class="collapse">
+				<ul class="menu left">
+					
+					<li class="desktop ">
+						<a href="/proc/refresh/">Refresh</a>
+					</li>
+					
+					<li class="dropdown">
+						<button class="btn btn-secondary btn-square" type="button" id="dropdown">
+							<i class="fa fa-chevron-down"></i>
+						</button>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="/proc/refresh/">Refresh</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<ul class="menu right">
+					
+					
+				</ul>
+			</div>
+		</nav>
+		<div id="content"></div>
+	</body>
+</html>
